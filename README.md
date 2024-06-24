@@ -1,26 +1,33 @@
-# Sistema Bancário - V1
+# Sistema Bancário - V2
 
-Este é um sistema bancário simples desenvolvido na V1. Ele oferece funcionalidades básicas de um banco, como saques, depósitos e exibição de extrato.
+Este é um sistema bancário aprimorado, agora na versão V2. Ele oferece funcionalidades mais completas, incluindo gerenciamento de usuários, contas correntes e operações bancárias básicas.
 
-## Funcionalidades Iniciais
+## Funcionalidades Adicionadas
+
+- **Criação de Usuários:**
+  - Os usuários agora precisam se cadastrar no sistema para realizar operações bancárias.
+  - O cadastro exige informações essenciais como nome e CPF.
+
+- **Encontrar Usuário por CPF:**
+  - A autenticação no sistema é feita por meio do CPF do usuário.
+  - Somente usuários cadastrados podem realizar operações bancárias.
+
+- **Criação de Conta Corrente:**
+  - Usuários cadastrados podem criar contas correntes associadas ao seu CPF.
+  - Cada usuário pode ter múltiplas contas correntes.
 
 - **Saques:**
-  - Os usuários podem realizar saques informando o valor desejado.
-  - Um limite diário de saques é aplicado (3 saques por dia).
-  - O saldo é atualizado após cada saque.
-
-- **Depósitos:**
-  - Os usuários podem fazer depósitos em suas contas informando o valor a ser depositado.
-  - Não há limite para depósitos.
+  - Usuários podem realizar saques de suas contas correntes, com o valor limitado ao saldo disponível.
+  - O sistema registra cada saque no extrato da conta.
 
 - **Extrato:**
-  - Os usuários podem visualizar seu extrato bancário, que inclui informações sobre depósitos e saques realizados.
+  - Usuários podem gerar um extrato completo de sua conta corrente, incluindo todas as transações realizadas (saques e depósitos).
 
 ## Como Usar
 
 1. Clone o repositório em sua máquina local.
 2. Execute o arquivo principal do sistema bancário.
-3. Siga as instruções no menu para realizar saques, depósitos ou visualizar o extrato.
+3. Siga as instruções no menu para criar um usuário, encontrar um usuário pelo CPF, criar uma conta corrente, realizar saques ou gerar um extrato.
 
 ## Requisitos
 
@@ -34,4 +41,3 @@ Contribuições são bem-vindas! Se você deseja melhorar ou adicionar novas fun
 ## Autor
 
 Este projeto foi desenvolvido por [Lucas Bandeira da Silva](https://github.com/LucasBandeiraSilva).
-
